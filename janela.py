@@ -26,27 +26,16 @@ class Janela(Frame):
         texto = Label(self, text="Olá mundo", font="Heveltica, 12", fg="blue")
         texto.pack()
 
-        # - criação do botão
+        # - definição da função que vai modificar o label (texto)
         def MudaCor(self):
             texto = Label(self, text="O texto mudou!",
                           font="Heveltica, 12", fg="Red")
             texto.pack()
 
-        botaoEnviar = Button(self, text="Mudar cor", command=MudaCor)
+        # - criação do botão
+
+        botaoEnviar = Button(self, text="Mudar cor", command=self.MudaCor)
         botaoEnviar.pack()
-
-        # - Criação da barra de menu
-
-       # menu = Menu(self.master)
-       # self.master.config(menu=menu)
-
-      #	file = Menu(menu)
-        #file.add_command(label='Sair', command=self.quit)
-       # menu.add_cascade(label='Arquivo', menu=file)
-
-        #edit = Menu(menu)
-        # edit.add_command(label='Desfazer')
-        #menu.add_cascade(label='Editar', menu=edit)
 
 
 if __name__ == '__main__':
