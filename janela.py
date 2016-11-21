@@ -5,7 +5,7 @@
 from tkinter import *
 
 
-# - iniciando a classe Janela
+# - iniciando a classe Janela e herdando a classe Frame
 
 
 class Janela(Frame):
@@ -32,7 +32,7 @@ class Janela(Frame):
                           font="Heveltica, 12", fg="Red")
             texto.pack()
 
-        # - criação do botão
+        # - criação do botão com a função MudaCor
 
         botaoEnviar = Button(self, text="Mudar cor", command=self.MudaCor)
         botaoEnviar.pack()
